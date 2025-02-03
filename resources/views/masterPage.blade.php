@@ -25,7 +25,7 @@
             <a href="/admin" class="app-brand-link">
               <h3 class="app-brand-text  menu-text fw-bolder ms-2">Mart</h3>
             </a>
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <a href="#" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
@@ -38,19 +38,62 @@
             </li>
 
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
+              <a href="#" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons bx bx-user-circle' ></i>
                 <div data-i18n="Layouts">Users</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Create user</div>
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">View Users</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">Create User</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
                     <div data-i18n="Without menu">Set Role</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons bx bx-package' ></i>
+                <div data-i18n="Layouts">Products</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">View Products</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">Add new Product</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons bx bx-purchase-tag-alt' ></i>
+                <div data-i18n="Layouts">Categories</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">View Categories</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">Create new Category</div>
                   </a>
                 </li>
               </ul>
@@ -76,7 +119,7 @@
               </div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="#" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
                       <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
@@ -129,6 +172,10 @@
           <div class="content-wrapper">
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
+                @yield('content')
+
+                
+
 
               </div>
           </div>
