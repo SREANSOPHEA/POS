@@ -30,38 +30,40 @@
             </a>
           </div>
           <ul class="menu-inner py-1">
-            <li class="menu-item active">
-              <a href="index.html" class="menu-link">
+            <li class="menu-item {{$page == 'dashboard' ? 'active':''}}">
+              <a href="/admin" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item {{$page == 'category' ? 'active':''}}">
+              <a href="/admin/category" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-purchase-tag-alt"></i>
+                <div data-i18n="Layouts">Categories</div>
+              </a>
+            </li>
+
+            <li class="menu-item {{$page == 'user' ? 'active':''}}">
               <a href="#" class="menu-link menu-toggle">
                 <i class='menu-icon tf-icons bx bx-user-circle' ></i>
                 <div data-i18n="Layouts">Users</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
+                  <a href="/admin/users" class="menu-link">
                     <div data-i18n="Without menu">View Users</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
+                  <a href="/admin/addUser" class="menu-link">
                     <div data-i18n="Without menu">Create User</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Without menu">Set Role</div>
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item {{$page == 'product' ? 'active':''}}">
               <a href="#" class="menu-link menu-toggle">
                 <i class='menu-icon tf-icons bx bx-package' ></i>
                 <div data-i18n="Layouts">Products</div>
@@ -80,24 +82,6 @@
               </ul>
             </li>
 
-            <li class="menu-item">
-              <a href="#" class="menu-link menu-toggle">
-                <i class='menu-icon tf-icons bx bx-purchase-tag-alt' ></i>
-                <div data-i18n="Layouts">Categories</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Without menu">View Categories</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Without menu">Create new Category</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Pages</span>
@@ -174,7 +158,7 @@
               <div class="row">
                 @yield('content')
 
-                
+
 
 
               </div>
@@ -190,6 +174,7 @@
     <script src="../assets/vendor/js/menu.js"></script>
     <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/dashboards-analytics.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>

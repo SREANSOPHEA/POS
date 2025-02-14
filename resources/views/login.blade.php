@@ -42,7 +42,7 @@
                   </div>
                 </div>
                 <div class="mb-3 mt-4">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                  <a class="btn btn-primary d-grid w-100" href="/admin">Sign in</a>
                 </div>
               </form>
             </div>
