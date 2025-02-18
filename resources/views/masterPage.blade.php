@@ -60,6 +60,11 @@
                     <div data-i18n="Without menu">Create User</div>
                   </a>
                 </li>
+                <li class="menu-item">
+                  <a href="/admin/employee" class="menu-link">
+                    <div data-i18n="Without menu">Create Employee</div>
+                  </a>
+                </li>
               </ul>
             </li>
 
@@ -70,13 +75,32 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
+                  <a href="/admin/products" class="menu-link">
                     <div data-i18n="Without menu">View Products</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link">
+                  <a href="/admin/addProuct" class="menu-link">
                     <div data-i18n="Without menu">Add new Product</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item {{$page == 'stock' ? 'active':''}}">
+              <a href="#" class="menu-link menu-toggle">
+                <i class='menu-icon tf-icons bx bx-package' ></i>
+                <div data-i18n="Layouts">Stock</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">Stock In</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <div data-i18n="Without menu">Stock Out</div>
                   </a>
                 </li>
               </ul>

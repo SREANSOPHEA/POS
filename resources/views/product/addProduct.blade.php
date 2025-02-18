@@ -7,7 +7,7 @@
             <form action="" method="post">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalCenterTitle">Add New Employee</h5>
+                    <h5 class="modal-title" id="modalCenterTitle">Add New Product</h5>
                 </div>
                 <div class="modal-body">
                     <div class="row">
