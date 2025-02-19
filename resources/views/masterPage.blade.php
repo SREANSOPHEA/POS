@@ -87,28 +87,31 @@
               </ul>
             </li>
 
-            <li class="menu-item {{$page == 'stock' ? 'active':''}}">
-              <a href="#" class="menu-link menu-toggle">
-                <i class='menu-icon tf-icons bx bx-package' ></i>
-                <div data-i18n="Layouts">Stock</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Without menu">Stock In</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <div data-i18n="Without menu">Stock Out</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
 
 
             <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Pages</span>
+              <span class="menu-header-text">Stocks</span>
+            </li>
+
+            <li class="menu-item {{$page == 'stockIn' ? 'active':''}}">
+              <a href="/admin/stockIn" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-layer-plus'></i>
+                <div data-i18n="Layouts">Stock In</div>
+              </a>
+            </li>
+
+            <li class="menu-item {{$page == 'stockOut' ? 'active':''}}">
+              <a href="/admin/stockOut" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-layer-minus'></i>
+                <div data-i18n="Layouts">Stock Out</div>
+              </a>
+            </li>
+
+            <li class="menu-item {{$page == 'stockAdjustment' ? 'active':''}}">
+              <a href="/admin/stockAdjustment" class="menu-link">
+                <i class='menu-icon tf-icons bx bx-layer'></i>
+                <div data-i18n="Layouts">Stock Adjustment</div>
+              </a>
             </li>
           </ul>
         </aside>

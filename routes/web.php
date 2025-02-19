@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin_controller;
+use App\Http\Controllers\cashier_controller;
 use App\Http\Controllers\employee_controller;
 use App\Http\Controllers\product_controller;
 use App\Http\Controllers\user_controller;
@@ -22,3 +23,6 @@ Route::get('/admin/employee', [employee_controller::class,'employee']);
 // Product
 Route::get('/admin/products', [product_controller::class,'product']);
 Route::get('/admin/addProuct', [product_controller::class,'addProduct']);
+
+// Cashier
+Route::get('/admin/cashier', [cashier_controller::class,'cashier']);
