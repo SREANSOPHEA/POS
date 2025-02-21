@@ -26,3 +26,5 @@ Route::get('/admin/addProuct', [product_controller::class,'addProduct']);
 
 // Cashier
 Route::get('/admin/cashier', [cashier_controller::class,'cashier']);
+// Route::get('/admin/cashier', [cashier_controller::class,'cashier']);
+Route::post('/testingSendData', [cashier_controller::class,'senddata']);
