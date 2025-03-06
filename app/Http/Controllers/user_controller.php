@@ -8,10 +8,10 @@ class user_controller extends Controller
 {
 
     function user(){
-        return view("user.user",['page'=>'user']);
+        return view("admin.user.user");
     }
 
     function addUser(){
-        return view("user.addUser",['page'=>'user']);
+        return view("admin.user.addUser");
     }
 }
